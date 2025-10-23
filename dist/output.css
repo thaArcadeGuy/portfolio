@@ -374,6 +374,9 @@
   .text-\[\#F6C339\] {
     color: #F6C339;
   }
+  .text-\[1\.rem\] {
+    color: 1.rem;
+  }
   .text-white {
     color: var(--color-white);
   }
