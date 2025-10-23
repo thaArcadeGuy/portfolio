@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer components {
+  .font-roboto-mono {
+    font-family: "Roboto Mono", monospace;
+  }
+
+  .font-poppins {
+    font-family: "Poppins", serif;
+  }
+
+  .font-handlee {
+    font-family: "Handlee", cursive;
+  }
+
+  .font-metrophobic {
+    font-family: "Metrophobic", serif;
+  }
+
+  .nav-list-items {
+    /* @apply lg:hover:border-b-4 transition-all duration-300 */
+    @apply lg:border-b-4 border-transparent hover:border-[#663399] transition-all duration-300;
+  }
+
+  .skill-card {
+    @apply flex flex-col gap-4 items-center border-2 p-6 mb-2  md:flex-row
+  }
+
+  .inner-section {
+    @apply w-[90%] max-w-[1300px] m-auto 
+  }
+
+  .icon {
+    @apply bg-white border-2 p-6 
+  }
+
+  h2 {
+    @apply font-bold py-4 text-[2.2rem] lg:text-[3.6rem] lg:py-4
+  }
+
+  h3 {
+    @apply text-[2rem] font-semibold mt-4 mb-2 lg:mt-0 lg:text-[2.6rem]
+  }
+
+  .project-card {
+    @apply bg-[#F6CDF6] [box-shadow:6px_6px_0_black] lg:[box-shadow:10px_10px_0_black]
+  }
+
+  .project-name {
+    @apply m-8
+  }
+
+  .project-stack {
+    @apply mx-8 py-4 text-[1.2rem] md:text-[1.4rem]
+  }
+
+  .project-status {
+    @apply flex items-center gap-2 text-[1.2rem] mx-8 pb-2 md:text-[1.4rem]
+  }
+
+  .live-indicator {
+    @apply bg-[#dee1e6] w-4 h-4 rounded
+  }
+
+  .details {
+    @apply text-[1.2rem] mx-8 bg-black inline-block text-white px-8 py-4 mt-4 mb-8 md:text-[1.4rem] cursor-pointer hover:bg-white transition-all duration-300 hover:text-black
+  }
+  
+  label {
+    @apply block text-[1.6rem] mb-2 lg:text-[1.8rem]
+  }
+  input {
+    @apply border-2 p-4 block w-[100%] text-[1.6rem] mb-8 lg:text-[1.8rem] hover:bg-white transition-all duration-300 focus:border-black focus:outline focus:outline-0
+  }
+  textarea {
+    @apply border-2 w-[100%] p-4 text-[1.6rem] mb-8 lg:text-[1.8rem] hover:bg-white focus:border-black focus:outline focus:outline-0 hover:brightness-90 transition-all duration-300
+  }
+
+  button {
+    @apply cursor-pointer border-2 border-black block w-[100%] bg-black text-[1.8rem] text-white p-8 hover:bg-[#e6aaac] transition-all duration-300 hover:text-black
+  }
+
+  .socials {
+    @apply flex gap-8 md:m-auto  lg:me-0
+  }
+}
