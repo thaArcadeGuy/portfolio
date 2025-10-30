@@ -285,9 +285,16 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-3 {
+    border-style: var(--tw-border-style);
+    border-width: 3px;
+  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
+  }
+  .border-black {
+    border-color: var(--color-black);
   }
   .bg-\[\#00ed64\] {
     background-color: #00ed64;
@@ -355,6 +362,15 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -416,6 +432,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .\[box-shadow\:6px_6px_0_\#e6aaac\] {
+    box-shadow: 6px 6px 0 #e6aaac;
   }
   .\[box-shadow\:6px_6px_0_black\] {
     box-shadow: 6px 6px 0 black;
@@ -507,6 +526,11 @@
       gap: calc(var(--spacing) * 10);
     }
   }
+  .md\:gap-\[1\.2rem\] {
+    @media (width >= 48rem) {
+      gap: 1.2rem;
+    }
+  }
   .md\:gap-\[1rem\] {
     @media (width >= 48rem) {
       gap: 1rem;
@@ -541,6 +565,11 @@
   .md\:py-\[3rem\] {
     @media (width >= 48rem) {
       padding-block: 3rem;
+    }
+  }
+  .md\:text-\[1\.8rem\] {
+    @media (width >= 48rem) {
+      font-size: 1.8rem;
     }
   }
   .md\:text-\[2\.2rem\] {
